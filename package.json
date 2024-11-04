@@ -1,0 +1,21 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "Blog Platform utilizing SSR and static site generation features from Next.js",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "author": "Vik Wedel",
+  "license": "ISC",
+  "dependencies": {
+    "next": "^15.0.2",
+    "typescript": "^5.6.3"
+  },
+  "devDependencies": {
+    "@types/node": "22.8.7",
+    "@types/react": "18.3.12"
+  }
+}
