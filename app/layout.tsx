@@ -1,4 +1,11 @@
-export default function RootLayout({ children }: { children: any }) {
+import "@/app/ui/global.css";
+import { inter } from "./ui/fonts";
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en">
       <head>
@@ -9,7 +16,7 @@ export default function RootLayout({ children }: { children: any }) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </head>
 
-      <body>{children}</body>
+      <body className={`${inter.className} antialiased`}>{children}</body>
     </html>
   );
 }
